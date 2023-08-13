@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.nio.file.Path;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -30,7 +31,7 @@ public class Refactorer {
                 Matcher m = p.matcher(content);
                 m.find();
 
-                // FileWriter fw = new FileWriter(file);
+                FileWriter fw = new FileWriter(file);
                 content.insert(m.end() + 1,
                         String.format(
                                 "\n    public int getID() {\n        return %s;\n    }\n\n    public String getDescription() {\n          return %s;\n    }\n",
@@ -39,9 +40,9 @@ public class Refactorer {
                 content.replace(m.start(1), m.end(2), "getID(), getDescription()");
                 System.out.println(content);
 
-                // fw.write(content.toString());
-                // fw.flush();
-                // fw.close();
+                fw.write(content.toString());
+                fw.flush();
+                fw.close();
                 System.out.println("-".repeat(80));
                 System.out.println("Successfully Refactored: " + file.getName());
             } catch (Exception e) {
