@@ -11,7 +11,15 @@ import tasks.interfaces.TASK;
 
 public class Task_24 implements TASK{
     public Task_24(){
-        showDetails(24,"Print Array After Doing K Times Right Shift");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 24;
+    }
+
+    public String getDescription() {
+          return "Print Array After Doing K Times Right Shift";
     }
 
     @Override

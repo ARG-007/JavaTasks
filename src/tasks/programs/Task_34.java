@@ -5,7 +5,15 @@ import tasks.interfaces.TASK;
 
 public class Task_34 implements TASK{
     public Task_34(){
-        showDetails(34,"\n\t1.Count Of Vowel and Consonent\n\t2.Number Of Words");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 34;
+    }
+
+    public String getDescription() {
+          return "\n\t1.Count Of Vowel and Consonent\n\t2.Number Of Words";
     }
 
     public static int[] countVowelConsonent(String string){

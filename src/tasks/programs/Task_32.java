@@ -4,7 +4,15 @@ import tasks.interfaces.TASK;
 
 public class Task_32 implements TASK{
     public Task_32(){
-        showDetails(32,"\n\t1.String Uppercase To Lowercase\n\t2.String Lowercase to Uppercase");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 32;
+    }
+
+    public String getDescription() {
+          return "\n\t1.String Uppercase To Lowercase\n\t2.String Lowercase to Uppercase";
     }
     
     public void execute(){

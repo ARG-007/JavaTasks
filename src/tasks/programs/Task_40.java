@@ -8,7 +8,15 @@ import tasks.library.Helper;
 
 public class Task_40 implements TASK{
     public Task_40(){
-        showDetails(40, "Finding Triplets");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 40;
+    }
+
+    public String getDescription() {
+          return "Finding Triplets";
     }
 
 

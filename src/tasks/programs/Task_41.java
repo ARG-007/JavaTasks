@@ -7,7 +7,15 @@ import tasks.library.Helper;
 
 public class Task_41 implements TASK{
     public Task_41(){
-        showDetails(41, "Merge Two Sorted Array");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 41;
+    }
+
+    public String getDescription() {
+          return "Merge Two Sorted Array";
     }
 
     @Override

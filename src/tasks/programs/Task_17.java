@@ -15,8 +15,16 @@ public class Task_17 implements TASK{
          * Sends Task ID and Description to base class constructor to print these as
          * details
          */
-		showDetails(17,"Sum Of Elements In An Array Upto 'K' Elements");
+		showDetails(getID(), getDescription());
 	}
+
+    public int getID() {
+        return 17;
+    }
+
+    public String getDescription() {
+          return "Sum Of Elements In An Array Upto 'K' Elements";
+    }
 
 	@Override
 	public void execute() {

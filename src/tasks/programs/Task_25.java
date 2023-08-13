@@ -5,7 +5,15 @@ import tasks.library.Numbers;
 
 public class Task_25 implements TASK{
     public Task_25(){
-        showDetails(25,"Sum Of Square Of The Digits Of The Number");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 25;
+    }
+
+    public String getDescription() {
+          return "Sum Of Square Of The Digits Of The Number";
     }
 
     public void execute(){

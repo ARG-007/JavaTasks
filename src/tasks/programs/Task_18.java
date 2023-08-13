@@ -16,7 +16,15 @@ public class Task_18 implements TASK{
          * Sends Task ID and Description to base class constructor to print these as
          * details
          */
-        showDetails(18,"Check Whether A Number Is Pallindrome Or Not");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 18;
+    }
+
+    public String getDescription() {
+          return "Check Whether A Number Is Pallindrome Or Not";
     }
 
     @Override

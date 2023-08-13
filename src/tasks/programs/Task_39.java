@@ -6,7 +6,15 @@ import tasks.library.Helper;
 public class Task_39 implements TASK{
 
     public Task_39(){
-        showDetails(39, "Finding Equiblirium Number");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 39;
+    }
+
+    public String getDescription() {
+          return "Finding Equiblirium Number";
     }
 
     @Override

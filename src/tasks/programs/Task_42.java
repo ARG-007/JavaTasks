@@ -8,7 +8,15 @@ import tasks.library.Helper;
 public class Task_42 implements TASK{
 
     public Task_42() {
-        showDetails(42, "Sort Array of Elements which includes only 0,1,2");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 42;
+    }
+
+    public String getDescription() {
+          return "Sort Array of Elements which includes only 0,1,2";
     }
 
     @Override

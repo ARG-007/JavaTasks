@@ -5,7 +5,15 @@ import tasks.interfaces.TASK;
 
 public class Task_31 implements TASK{
     public Task_31(){
-        showDetails(31,"\n\t1.String Concatenation\n\t2.Lexographically Equal");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 31;
+    }
+
+    public String getDescription() {
+          return "\n\t1.String Concatenation\n\t2.Lexographically Equal";
     }
 
 

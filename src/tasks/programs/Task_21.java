@@ -16,7 +16,15 @@ public class Task_21 implements TASK{
          * Sends Task ID and Description to base class constructor to print these as
          * details
          */
-        showDetails(21,"Calculate The Power Of The Number");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 21;
+    }
+
+    public String getDescription() {
+          return "Calculate The Power Of The Number";
     }
 
     @Override

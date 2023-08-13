@@ -4,7 +4,15 @@ import tasks.interfaces.TASK;
 
 public class Task_36 implements TASK{
     public Task_36(){
-        showDetails(36,"\n\t1.First Occurence\n\t2.Last Occurence");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 36;
+    }
+
+    public String getDescription() {
+          return "\n\t1.First Occurence\n\t2.Last Occurence";
     }
 
     public static int firstOccOwn(String string,char target){

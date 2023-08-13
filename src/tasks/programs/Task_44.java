@@ -10,7 +10,15 @@ import tasks.library.LinkedList;
 
 public class Task_44 implements TASK{
     public Task_44(){
-        showDetails(44, "\nTasks:\n\t1: Find Middle Element\n\t2: Reverse a Linked List\n\t3: Reverse Doubly Linked List\n\t4: Reverse In Groups On Linked List");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 44;
+    }
+
+    public String getDescription() {
+          return "\nTasks:\n\t1: Find Middle Element\n\t2: Reverse a Linked List\n\t3: Reverse Doubly Linked List\n\t4: Reverse In Groups On Linked List";
     }
 
     static <E> E findMiddle(LinkedList<E> ll) {

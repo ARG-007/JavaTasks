@@ -5,7 +5,15 @@ import tasks.interfaces.TASK;
 public class Task_45 implements TASK{
 
     public Task_45(){
-        showDetails(45, "Duck Number [If Number starts with 0 it is not a Duck]");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 45;
+    }
+
+    public String getDescription() {
+          return "Duck Number [If Number starts with 0 it is not a Duck]";
     }
 
     @Override

@@ -9,7 +9,15 @@ import tasks.interfaces.TASK;
 public class Task_33 implements TASK{
     
     public Task_33(){
-        showDetails(33,"\n\t1.Toggle Case\n\t2.Number Of Words");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 33;
+    }
+
+    public String getDescription() {
+          return "\n\t1.Toggle Case\n\t2.Number Of Words";
     }
 
 

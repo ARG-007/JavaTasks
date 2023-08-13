@@ -8,7 +8,15 @@ import tasks.library.Helper;
 
 public class Task_47 implements TASK {
     public Task_47() {
-        showDetails(47, "Rotate an Array");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 47;
+    }
+
+    public String getDescription() {
+          return "Rotate an Array";
     }
 
     @Override

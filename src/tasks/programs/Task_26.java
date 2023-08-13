@@ -9,7 +9,15 @@ import tasks.interfaces.TASK;
 
 public class Task_26 implements TASK{
     public Task_26(){
-        showDetails(26,"Finding The Number That Is Divisible By The Two Given Numbers");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 26;
+    }
+
+    public String getDescription() {
+          return "Finding The Number That Is Divisible By The Two Given Numbers";
     }
 
     public int dividedByNumbers(int L,int R){

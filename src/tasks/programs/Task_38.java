@@ -7,7 +7,15 @@ import tasks.library.Helper;
 
 public class Task_38 implements TASK{
     public Task_38() {
-        showDetails(38,"Finding The First Missing Integer In The Array");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 38;
+    }
+
+    public String getDescription() {
+          return "Finding The First Missing Integer In The Array";
     }
 
     @Override

@@ -24,7 +24,15 @@ class RemoveDub extends Array{
 
 public class Task_29 implements tasks.interfaces.TASK{
     public Task_29(){
-        showDetails(29,"Remove Duplicate Elements From The Given Array");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 29;
+    }
+
+    public String getDescription() {
+          return "Remove Duplicate Elements From The Given Array";
     }
 
     public void execute(){

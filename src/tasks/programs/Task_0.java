@@ -14,8 +14,16 @@ public class Task_0 implements TASK{
          * Sends Task ID and Description to base class constructor to print these as
          * details
          */
-		showDetails(0,"A Sacrifice for greater good");
+		showDetails(getID(), getDescription());
 	}
+
+    public int getID() {
+        return 0;
+    }
+
+    public String getDescription() {
+          return "A Sacrifice for greater good";
+    }
 
 	@Override
 	public void execute() {

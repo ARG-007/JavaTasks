@@ -4,7 +4,15 @@ import tasks.interfaces.TASK;
 
 public class Task_27 implements TASK {
     public Task_27(){
-        showDetails(27,"Find Whether N is the power of K");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 27;
+    }
+
+    public String getDescription() {
+          return "Find Whether N is the power of K";
     }
 
     public boolean isaPowerOf(int N,int K){

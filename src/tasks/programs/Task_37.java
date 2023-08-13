@@ -8,7 +8,15 @@ import tasks.interfaces.TASK;
 public class Task_37 implements TASK{
 
     public Task_37() {
-        showDetails(37, "Reversing in Groups");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 37;
+    }
+
+    public String getDescription() {
+          return "Reversing in Groups";
     }
 
     public void execute() {

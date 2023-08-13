@@ -4,7 +4,15 @@ import tasks.interfaces.TASK;
 
 public class Task_35 implements TASK{
     public Task_35(){
-        showDetails(35,"\n\t1.Reverse Of A String\n\t2.Pallindrome");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 35;
+    }
+
+    public String getDescription() {
+          return "\n\t1.Reverse Of A String\n\t2.Pallindrome";
     }
 
     public static String reverseString(String string){

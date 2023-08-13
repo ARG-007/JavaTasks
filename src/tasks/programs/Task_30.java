@@ -46,7 +46,15 @@ class StringOps{
 
 public class Task_30 extends StringOps implements TASK{
     public Task_30 (){
-        showDetails(30,"\n\t1.Length Of The String\n\t2.Copy String");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 30;
+    }
+
+    public String getDescription() {
+          return "\n\t1.Length Of The String\n\t2.Copy String";
     }
 
     public void execute(){

@@ -16,7 +16,15 @@ public class Task_23 implements TASK{
          * Sends Task ID and Description to base class constructor to print these as
          * details
          */
-        showDetails(23,"Print The Even Numbers Between The Given Range");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 23;
+    }
+
+    public String getDescription() {
+          return "Print The Even Numbers Between The Given Range";
     }
 
     @Override

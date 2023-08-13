@@ -15,7 +15,15 @@ public class Task_19 implements TASK{
          * Sends Task ID and Description to base class constructor to print these as
          * details
          */
-        showDetails(19,"Check Whether A Number Is Prime Or Not");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 19;
+    }
+
+    public String getDescription() {
+          return "Check Whether A Number Is Prime Or Not";
     }
 
     @Override

@@ -6,8 +6,17 @@ import tasks.library.Helper;
 public class Task_50 implements TASK{
 
     public Task_50(){
-        showDetails(50, "Find Number Of Elements Greater Than Its Prior Numbers");
+        showDetails(getID(), getDescription());
     }
+
+    public int getID() {
+        return 50;
+    }
+
+    public String getDescription() {
+          return "Find Number Of Elements Greater Than Its Prior Numbers";
+    }
+
     @Override
     public void execute() {
         int[] arr = Helper.toIntArray(input("Enter the Elements: ").split(" "));

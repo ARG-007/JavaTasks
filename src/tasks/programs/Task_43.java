@@ -7,7 +7,15 @@ import tasks.library.Helper;
 
 public class Task_43 implements TASK{
     public Task_43() {
-        showDetails(43, "Count The Number of Digits");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 43;
+    }
+
+    public String getDescription() {
+          return "Count The Number of Digits";
     }
 
     @Override

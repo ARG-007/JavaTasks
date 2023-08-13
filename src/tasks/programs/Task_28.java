@@ -5,7 +5,15 @@ import tasks.library.Array;
 
 public class Task_28 implements TASK{
     public Task_28(){
-        showDetails(28,"Find The Second Smallest In An Array");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 28;
+    }
+
+    public String getDescription() {
+          return "Find The Second Smallest In An Array";
     }
 
     public void execute(){

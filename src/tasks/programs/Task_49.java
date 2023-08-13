@@ -6,7 +6,15 @@ import tasks.interfaces.TASK;
 
 public class Task_49 implements TASK{
     public Task_49(){
-        showDetails(49, "Reverse Number Using Abstracting Digit");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 49;
+    }
+
+    public String getDescription() {
+          return "Reverse Number Using Abstracting Digit";
     }
     @Override
     public void execute() {

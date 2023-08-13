@@ -7,7 +7,15 @@ import tasks.interfaces.TASK;
 public class Task_48 implements TASK {
 
     public Task_48(){
-        showDetails(48, "Merge Intervals");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 48;
+    }
+
+    public String getDescription() {
+          return "Merge Intervals";
     }
 
     private static class Interval implements Comparable<Interval> {

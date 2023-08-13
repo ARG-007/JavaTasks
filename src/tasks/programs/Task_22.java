@@ -17,7 +17,15 @@ public class Task_22 implements TASK{
          * Sends Task ID and Description to base class constructor to print these as
          * details
          */
-        showDetails(22,"Print The Given Array With Their Index");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 22;
+    }
+
+    public String getDescription() {
+          return "Print The Given Array With Their Index";
     }
 
     @Override

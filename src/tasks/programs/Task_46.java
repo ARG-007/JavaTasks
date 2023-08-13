@@ -6,7 +6,15 @@ import tasks.interfaces.TASK;
 
 public class Task_46 implements TASK{
     public Task_46(){
-        showDetails(46, "Reversing Vowels In a String");
+        showDetails(getID(), getDescription());
+    }
+
+    public int getID() {
+        return 46;
+    }
+
+    public String getDescription() {
+          return "Reversing Vowels In a String";
     }
 
     public static boolean isVowel(char c) {
